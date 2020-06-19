@@ -7468,7 +7468,7 @@ img.mfp-img {
 }
 
 .carousel .slide img {
-  max-height: 800px; /*change this to whatever you want */
+  max-height: 700px; /*change this to whatever you want */
   /*width: auto;*/
   width: '100%';
   float: 'left';
@@ -7477,4 +7477,26 @@ img.mfp-img {
   opacity: '0';
   display: 'block';
   z-index: '1';
+}
+
+.carousel-brands .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #2c2c2c;
+}
+
+.carousel-brands .slide img {
+  max-height: 300px; /*change this to whatever you want */
+  /*width: auto;*/
+  width: '100%';
+  float: 'left';
+  margin-right: '-100%';
+  position: 'relative';
+  opacity: '0';
+  display: 'block';
+  z-index: '1';
+}
+.img-brand-gallery {
+  width: 200px;
+  height: 90px;
 }

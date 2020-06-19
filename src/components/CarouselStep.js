@@ -1,7 +1,11 @@
 import React from 'react';
 const CarouselStep = (props) => (
   <div>
-    <img src={props.imageStep} alt="" />
+    <img
+      src={props.imageStep}
+      alt=""
+      style={{ backgroundSize: 'cover', position: 'relative', top: '25%' }}
+    />
     <p
       className="legend"
       style={{ display: 'flex', justifyContent: 'space-evenly' }}

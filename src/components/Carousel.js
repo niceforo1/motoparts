@@ -22,8 +22,9 @@ const MyCarrousel = () => (
     showThumbs={false}
     axis="vertical"
     infiniteLoop={true}
-    interval={3000}
+    interval={6000}
     verticalSwipe="standard"
+    transitionTime={2000}
   >
     <CarouselStep
       imageStep={img1}
