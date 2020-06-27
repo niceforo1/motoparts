@@ -42,7 +42,7 @@ const BrandsGallery = () => {
         600: { items: 3 },
         480: { items: 2 },
       }}
-      stagePadding={{ paddingTop: 150 }}
+      stagePadding={{ paddingTop: 150, paddingBottom: 150 }}
       buttonsDisabled={true}
       //dotsDisabled={true}
       //autoPlay={true}
