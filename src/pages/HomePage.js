@@ -6,12 +6,10 @@ import Brands from '../components/Brands';
 
 function HomePage() {
   return (
-    <div>
-      <Header />
+    <React.Fragment>
       <Home />
       <Brands />
-      <Footer />
-    </div>
+    </React.Fragment>
   );
 }
 
