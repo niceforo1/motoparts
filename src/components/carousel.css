@@ -1,0 +1,21 @@
+.box {
+  top: 200px;
+  width: 100%;
+  height: 700px;
+  background: #ccc;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 700px;
+}
+
+@supports (object-fit: cover) {
+  .box {
+    top: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 5px;
+  }
+}

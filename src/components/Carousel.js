@@ -1,7 +1,7 @@
 import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import CarouselStep from './CarouselStep';
+
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 import img1 from '../images/slide/4724_87bfa06a458de2e7c3a5d56d8a3b145e.jpg';
 import img2 from '../images/slide/4304_motos.jpg';
@@ -12,74 +12,39 @@ import img6 from '../images/slide/5246_cortada.jpg';
 import img7 from '../images/slide/3493_2012_yamaha_yzf_r1-1920x1080.jpg';
 import img8 from '../images/slide/5506_7955_mc-tech.jpg';
 import img9 from '../images/slide/3091_thumb-1920-751003.jpg';
-import img10 from '../images/slide/2436_EBC CHICO.jpg';
-import img11 from '../images/slide/8127_progrip.png';
-import img12 from '../images/slide/4190_414044_preview.png';
 
-const MyCarrousel = () => (
-  <Carousel
-    autoPlay
-    showThumbs={false}
-    axis="vertical"
-    infiniteLoop={true}
-    interval={6000}
-    verticalSwipe="standard"
-    transitionTime={2000}
-  >
-    <CarouselStep
-      imageStep={img1}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-    <CarouselStep
-      imageStep={img2}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-    <CarouselStep
-      imageStep={img3}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-    <CarouselStep
-      imageStep={img4}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-    <CarouselStep
-      imageStep={img5}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-    <CarouselStep
-      imageStep={img6}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-    <CarouselStep
-      imageStep={img7}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-    <CarouselStep
-      imageStep={img8}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-    <CarouselStep
-      imageStep={img9}
-      imgLegend1={img10}
-      imgLegend2={img11}
-      imgLegend3={img12}
-    />
-  </Carousel>
-);
-export default MyCarrousel;
+import './carousel.css';
+
+const Carousel = () => {
+  const handleOnDragStart = (e) => e.preventDefault();
+  return (
+    <AliceCarousel
+      mouseTrackingEnabled
+      controlsStrategy="responsive"
+      responsive={{
+        1024: { items: 1 },
+        768: { items: 1 },
+        600: { items: 1 },
+        480: { items: 1 },
+      }}
+      stagePadding={{ paddingTop: 150, paddingBottom: 150 }}
+      buttonsDisabled={true}
+      //dotsDisabled={true}
+      duration={2000}
+      autoPlay={true}
+      autoPlayInterval={2500}
+    >
+      <img src={img1} onDragStart={handleOnDragStart} className="box" />
+      <img src={img2} onDragStart={handleOnDragStart} className="box" />
+      <img src={img3} onDragStart={handleOnDragStart} className="box" />
+      <img src={img4} onDragStart={handleOnDragStart} className="box" />
+      <img src={img5} onDragStart={handleOnDragStart} className="box" />
+      <img src={img6} onDragStart={handleOnDragStart} className="box" />
+      <img src={img7} onDragStart={handleOnDragStart} className="box" />
+      <img src={img8} onDragStart={handleOnDragStart} className="box" />
+      <img src={img9} onDragStart={handleOnDragStart} className="box" />
+    </AliceCarousel>
+  );
+};
+
+export default Carousel;

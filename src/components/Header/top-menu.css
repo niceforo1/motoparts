@@ -1,0 +1,19 @@
+.topMenuContainer {
+  display: flex;
+  /*justify-content: space-around;*/
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.65);
+  height: 4vh;
+  padding-right: 18em;
+  padding-left: 18em;
+}
+.optionTopMenu {
+  font-family: Lato;
+  color: #333;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  border-right: 1px dotted gray;
+  padding-right: 1em;
+  padding-left: 1em;
+}

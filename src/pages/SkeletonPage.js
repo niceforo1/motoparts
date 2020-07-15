@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 function SkeletonPage(props) {
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <Header />
       {props.children}
       <Footer />

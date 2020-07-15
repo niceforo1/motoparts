@@ -1,8 +1,25 @@
 import React from 'react';
-
+import './suscripcion.css';
 export default () => (
-  <div className="col-lg-4 col-md-4 padbot30">
-    <h4>Suscripcion</h4>
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+      width: '25%',
+    }}
+  >
+    <div
+      style={{
+        fontStyle: 'normal',
+        fontFamily: 'Lato',
+        fontWeight: '900',
+        fontSize: '1.5em',
+        color: '#fff',
+      }}
+    >
+      Suscripcion
+    </div>
     <form
       action="procesar_newsletter.php?procesar=1"
       method="post"
@@ -23,7 +40,21 @@ export default () => (
                   onBlur="if (this.value == '') this.value = 'Dejanos tu mail, te contaremos de promociones';"
                 />*/}
       <input
-        className="btn newsletter_btn"
+        style={{
+          margin: '0',
+          padding: '10px 52px',
+          fontFamily: 'Lato',
+          textTransform: 'uppercase',
+          fontWeight: '900',
+          fontStyle: 'normal',
+          lineHeight: '20px',
+          fontSize: '14px',
+          color: '#fff',
+          borderRadius: '0',
+          background: '#434343',
+          border: '0',
+          boxShadow: 'none',
+        }}
         type="submit"
         defaultValue="Suscribirme!"
       />

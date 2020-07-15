@@ -19,7 +19,7 @@ function ProductsPage() {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            height: '47vh',
+            height: '67vh',
           }}
         >
           <h2

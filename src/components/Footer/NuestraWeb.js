@@ -1,27 +1,42 @@
 import React from 'react';
 
 export default () => (
-  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-6 col-ss-12 padbot30">
-    <h4>Nuestra Web</h4>
-    <ul className="foot_menu">
-      <li>
-        <a href="nosotros.php">Nosotros</a>
-      </li>
-      <li>
-        <a href="como_comprar.php">Como comprar</a>
-      </li>
-      <li>
-        <a href="noticias.php">Noticias</a>
-      </li>
-      <li>
-        <a href="productos.php">Nuestros productos</a>
-      </li>
-      <li>
-        <a href="productos_marcas.php">Marcas</a>
-      </li>
-      <li>
-        <a href="contacto.php">Contacto</a>
-      </li>
-    </ul>
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+      width: '10%',
+    }}
+  >
+    <span
+      style={{
+        fontStyle: 'normal',
+        fontFamily: 'Lato',
+        fontWeight: '900',
+        fontSize: '1.5em',
+        color: '#fff',
+      }}
+    >
+      Nuestra Web
+    </span>
+    <p style={{ fontFamily: 'Lato', fontSize: '1.25em' }}>
+      <a href="nosotros.php">Nosotros</a>
+    </p>
+    <p style={{ fontFamily: 'Lato', fontSize: '1.25em' }}>
+      <a href="como_comprar.php">Como comprar</a>
+    </p>
+    <p style={{ fontFamily: 'Lato', fontSize: '1.25em' }}>
+      <a href="noticias.php">Noticias</a>
+    </p>
+    <p style={{ fontFamily: 'Lato', fontSize: '1.25em' }}>
+      <a href="productos.php">Nuestros productos</a>
+    </p>
+    <p style={{ fontFamily: 'Lato', fontSize: '1.25em' }}>
+      <a href="productos_marcas.php">Marcas</a>
+    </p>
+    <p style={{ fontFamily: 'Lato', fontSize: '1.25em' }}>
+      <a href="contacto.php">Contacto</a>
+    </p>
   </div>
 );

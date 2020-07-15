@@ -1,15 +1,22 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Home from '../components/Home';
-import Brands from '../components/Brands';
+import BrandsGallery from '../components/BrandsGallery';
 
 function HomePage() {
   return (
-    <React.Fragment>
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        width: '100%',
+        minHeight: '720px',
+      }}
+    >
       <Home />
-      <Brands />
-    </React.Fragment>
+      <BrandsGallery />
+    </div>
   );
 }
 
