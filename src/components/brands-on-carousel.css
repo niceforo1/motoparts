@@ -4,14 +4,13 @@
   align-items: center;
   position: absolute;
   z-index: 30;
-  left: calc(50% - 405px);
+  left: calc(50% - 450px);
   right: 0;
   bottom: 18em;
   margin: 0 -15px;
   background-color: white;
-  width: 810px;
+  width: 900px;
   height: 176px;
-  border-radius: 10%;
 }
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s both;
