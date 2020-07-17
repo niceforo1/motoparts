@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './menu.css';
 import logo from '../../images/6700_logo.png';
 
@@ -6,17 +7,18 @@ const Menu = () => {
   return (
     <div className="menuContainer">
       <div>
-        <a href="index.php">
+        <Link to="/">
           <img src={logo} alt="MOTOPARTS" style={{ height: '3.75em' }} />
-        </a>
+        </Link>
       </div>
       <div className="rightMenu">
-        <a className="menuItemRight" href="nosotros.php">
+        <Link className="menuItemRight" to="/">
           Home
-        </a>
-        <a className="menuItemRight" href="contacto.php">
+        </Link>
+
+        <Link className="menuItemRight" to="/products">
           Productos
-        </a>
+        </Link>
         <a className="menuItemRight" href="registro.php">
           Noticias
         </a>

@@ -92,19 +92,19 @@ const Products = () => {
         <div className="headerSideBarContainer">
           <span className="headerSideBarCategory">TODAS LAS CATEGORIAS!</span>
           <p>(Se muestran solo 10, ver todas)</p>
+          {/* CADA ITEM CON LA MISMA CLASE */}
+          {categories.map((item) => {
+            return <div className="sideBarItem">{item}</div>;
+          })}
         </div>
-        {/* CADA ITEM CON LA MISMA CLASE */}
-        {categories.map((item) => {
-          return <div className="sideBarItem">{item}</div>;
-        })}
 
         <div className="headerSideBarContainer">
           <span className="headerSideBarCategory">TODAS LAS MARCAS!</span>
           <p>(Se muestran solo 10, ver todas)</p>
+          {brands.map((item) => {
+            return <div className="sideBarItem">{item}</div>;
+          })}
         </div>
-        {brands.map((item) => {
-          return <div className="sideBarItem">{item}</div>;
-        })}
       </div>
       <div className="productsContainer">
         <div className="productContainerHeader">
@@ -114,11 +114,12 @@ const Products = () => {
               paddingLeft: '1.25em',
               paddingRight: '0.5em',
               color: 'black',
+              fontSize: '0.7em',
             }}
           >
             12 articulos |
           </span>
-          <span style={{ color: 'red' }}>
+          <span style={{ color: 'red', fontSize: '0.7em' }}>
             Recuerda que debes loguearte para poder ver los precios!
           </span>
         </div>
