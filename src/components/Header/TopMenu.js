@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './top-menu.css';
 
 const TopMenu = () => {
   return (
     <div className="topMenuContainer">
       <div>
-        <a className="optionTopMenu" href="nosotros.php">
+        <Link className="optionTopMenu" to="/about">
           Nosotros
-        </a>
+        </Link>
         <a className="optionTopMenu" href="contacto.php">
           Contacto
         </a>

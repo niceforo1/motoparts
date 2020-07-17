@@ -30,7 +30,7 @@
 
 .sideBarItem {
   line-height: normal;
-  border-top: 1px dotted gray;
+  border-top: 1px solid lightgray;
   padding: 10px;
   font-size: 0.9em;
 }
@@ -43,14 +43,14 @@
 .productContainerHeader {
   display: flex;
   align-items: center;
-  border-bottom: 1px dotted gray;
+  border-bottom: 1px solid lightgray;
   padding-bottom: 0.5em;
   width: 100%;
   margin-right: 4em;
 }
 .productItemsContainer {
   display: flex;
-  border-bottom: 1px dotted gray;
+  border-bottom: 1px solid lightgray;
   flex-wrap: wrap;
   margin-top: 2em;
   justify-content: center;
